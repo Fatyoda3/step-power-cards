@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: monospace;
+  background-image: linear-gradient(black,rgb(172, 164, 164));
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  padding: 2em;
+  margin-left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em 2em;
+  overflow: scroll;
+}
+
+.user {
+  width: 350px;
+  height: 500px;
+  background-color: rgb(222, 222, 222);
+  padding: 0.5em;
+  border-radius: 5px;
+  border: 0.1px solid black;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  width: 100%;
+  height: calc(100%-350px);
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+  gap: 10px 0;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px
+}
+
+table,
+tbody {
+  width: 100%;
+}
+
+tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.15em;
+  border-bottom: 0.1px solid black;
+}
+
+.stat {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.value {
+  font-size: 16px;
+}
